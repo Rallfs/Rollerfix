@@ -97,9 +97,30 @@ nav ul li a {
   justify-content: center;
 }
 
+.login-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
 .login-logo {
   width: 150px;
-  margin-bottom: 20px;
+  margin: 0;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .login-form input {
