@@ -88,8 +88,13 @@ nav ul li a {
   background: rgba(255, 255, 255, 0.9);
   padding: 40px;
   border-radius: 10px;
-  width: 400px;
+  width: 988px;
+  height: 571px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .login-logo {
