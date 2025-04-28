@@ -170,9 +170,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   margin: 40px auto;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .photo-container {
@@ -184,6 +184,7 @@ footer {
   align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
 }
 
 .photo-container img {
@@ -193,16 +194,14 @@ footer {
 }
 
 .arrow {
-  background: rgba(0, 0, 0, 0.5);
+  background: none;
   color: white;
   border: none;
-  padding: 15px 20px;
   cursor: pointer;
-  font-size: 20px;
-  border-radius: 50%;
-  transition: background 0.3s;
+  font-size: 40px;
+  transition: color 0.3s;
 }
 
 .arrow:hover {
-  background: rgba(0, 0, 0, 0.8);
+  color: #cccccc;
 }
