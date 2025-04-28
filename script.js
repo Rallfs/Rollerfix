@@ -1,5 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
     console.log("Website loaded successfully!");
+    
+    const userIcon = document.querySelector('.user-icon');
+    if (userIcon) {
+        userIcon.addEventListener('click', function() {
+            window.location.href = 'login.html';
+        });
+    }
 
     // Gallery functionality
     if (window.location.pathname.includes('galerija.html')) {
