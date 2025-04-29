@@ -28,8 +28,20 @@ document.addEventListener("DOMContentLoaded", function() {
         const prevBtn = document.querySelector('.prev-btn');
         const nextBtn = document.querySelector('.next-btn');
 
+        const videoContainer = document.querySelector('.video-container');
+        let showingVideo = false;
+
         function updatePhoto() {
-            galleryImage.src = photos[currentPhotoIndex];
+            if (currentPhotoIndex === photos.length - 1) {
+                galleryImage.style.display = 'none';
+                videoContainer.classList.add('active');
+                showingVideo = true;
+            } else {
+                galleryImage.style.display = 'block';
+                videoContainer.classList.remove('active');
+                showingVideo = false;
+                galleryImage.src = photos[currentPhotoIndex];
+            }
         }
 
         prevBtn.addEventListener('click', () => {
