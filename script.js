@@ -20,16 +20,25 @@ document.addEventListener("DOMContentLoaded", function() {
             'nr3.jpg',
             'nr4.jpg',
             'nr5.jpg',
-            'nr6.jpg'
+            'nr6.jpg',
+            'youtube'
         ];
         
         let currentPhotoIndex = 0;
         const galleryImage = document.getElementById('galleryImage');
+        const videoFrame = document.querySelector('iframe');
         const prevBtn = document.querySelector('.prev-btn');
         const nextBtn = document.querySelector('.next-btn');
 
         function updatePhoto() {
-            galleryImage.src = photos[currentPhotoIndex];
+            if (photos[currentPhotoIndex] === 'youtube') {
+                galleryImage.style.display = 'none';
+                videoFrame.style.display = 'block';
+            } else {
+                galleryImage.style.display = 'block';
+                videoFrame.style.display = 'none';
+                galleryImage.src = photos[currentPhotoIndex];
+            }
         }
 
         prevBtn.addEventListener('click', () => {
