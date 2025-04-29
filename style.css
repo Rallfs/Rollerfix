@@ -262,25 +262,6 @@ footer {
   object-fit: contain;
 }
 
-.video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-}
-
-.video-container.active {
-  display: block;
-}
-
-.video-container iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
 .arrow {
   background: none;
   color: white;
