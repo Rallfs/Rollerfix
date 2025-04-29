@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Gallery functionality
     if (window.location.pathname.includes('galerija.html')) {
         const photos = [
-            'photo1.jpg',
+            'pirms izp.png',
             'photo2.jpg',
             'photo3.jpg',
             'photo4.jpg',
