@@ -12,15 +12,9 @@ document.addEventListener("DOMContentLoaded", function() {
     if (window.location.pathname.includes('galerija.html')) {
         const photos = [
             'pirms izp.png',
-            'photo2.jpg',
-            'photo3.jpg',
-            'photo4.jpg',
-            'photo5.jpg',
-            'photo6.jpg',
-            'photo7.jpg',
-            'photo8.jpg',
-            'photo9.jpg',
-            'photo10.jpg'
+            'pec izp.jpg',
+            'pirms rol.jpg',
+            'pec rol.jpg'
         ];
         
         let currentPhotoIndex = 0;
