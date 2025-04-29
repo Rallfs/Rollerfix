@@ -191,16 +191,15 @@ h1 {
 
 .jaunumi-kastes {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px 100px;
-  max-width: 1000px;         /* Limit the total width to force wrapping */
-  margin: 0 auto;           /* Center the whole box group */
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 960px;
+  margin: 0 auto;
   padding: 20px 0;
 }
 
 .jaunumi-kaste {
-  width: 230px;
+  width: 180px;
   height: 100px;
   background: transparent;
   border: 2px solid black;
