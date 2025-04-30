@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Gallery functionality
+
     if (window.location.pathname.includes('galerija.html')) {
         const photos = [
             'pirms.png',
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // News boxes hover effect
+
     let newsBoxes = document.querySelectorAll(".news-box");
     newsBoxes.forEach(box => {
         box.addEventListener("mouseover", function() {
@@ -62,4 +62,25 @@ document.addEventListener("DOMContentLoaded", function() {
             box.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
         });
     });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    const tips = [
+        "Regulāri pārbaudi riepu spiedienu.",
+        "Eļļo ķēdi regulāri.",
+        "Maini eļļu ik pēc 1000 km.",
+        "Bieži pārbaudi bremzes.",
+        "Uzglabā sausā vietā, lai izvairītos no rūsas."
+    ];
+    let currentTipIndex = 0;
+    const tipsList = document.getElementById('tipsList');
+
+
+    tipsList.innerHTML = '';
+    function changeTip() {
+        currentTipIndex = (currentTipIndex + 1) % tips.length;
+        tipsList.innerHTML = `<li>${tips[currentTipIndex]}</li>`;
+    }
+    setInterval(changeTip, 3000);
 });

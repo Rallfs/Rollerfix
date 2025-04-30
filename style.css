@@ -26,18 +26,18 @@ header {
   align-items: center;
   padding: 0 20px;
   background: transparent;
-  height: 100px; /* Makes enough space for the logo */
+  height: 100px; 
   position: relative;
-  z-index: 2; /* Keep it above other stuff */
+  z-index: 2; 
 }
 
 .logo {
   position: absolute;
   top: 10px;
   left: 10px;
-  z-index: 1000; /* Ensure it's on top of everything */
+  z-index: 1000; 
   width: 130px;
-  margin-top: 10px; /* Optional: shift logo upward slightly */
+  margin-top: 10px; 
 }
 
 .logo img {
@@ -66,9 +66,9 @@ nav ul li {
 }
 
 nav ul li a {
-  font-size: 18px;         /* Larger font size */
-  font-weight: bold;       /* Makes it look crisp like in the image */
-  margin: 0 20px;          /* Adds spacing between items */
+  font-size: 18px;         
+  font-weight: bold;       
+  margin: 0 20px;          
   color: white;
   text-decoration: none;
 }
@@ -194,8 +194,8 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px 100px;
-  max-width: 1000px;         /* Limit the total width to force wrapping */
-  margin: 0 auto;           /* Center the whole box group */
+  max-width: 1000px;        
+  margin: 0 auto;           
   padding: 20px 0;
 }
 
@@ -246,20 +246,19 @@ footer {
 
 .photo-container {
   width: 600px;
-  height: 400px;
+  height: 350px; 
   border: 2px solid black;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
+  margin: -20px auto; 
 }
-
 .photo-container img {
   max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+  max-height: 100%; 
+  object-fit: cover; 
 }
 
 .arrow {
@@ -273,4 +272,24 @@ footer {
 
 .arrow:hover {
   color: #cccccc;
+}
+
+.message-box {
+  position: fixed;
+  bottom: 120px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+  z-index: 1000;
+}
+.message-box h3 {
+  margin: 0 0 10px 0;
+}
+.message-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
