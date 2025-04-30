@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
+    console.log("Website loaded successfully!");
+    
     const userIcon = document.querySelector('.user-icon');
     if (userIcon) {
         userIcon.addEventListener('click', function() {
@@ -6,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
+    // Gallery functionality
     if (window.location.pathname.includes('galerija.html')) {
         const photos = [
             'pirms.png',
@@ -20,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'nr6.jpg',
             'youtube'
         ];
-
+        
         let currentPhotoIndex = 0;
         const galleryImage = document.getElementById('galleryImage');
         const videoFrame = document.querySelector('iframe');
@@ -48,4 +51,15 @@ document.addEventListener("DOMContentLoaded", function() {
             updatePhoto();
         });
     }
+
+    // News boxes hover effect
+    let newsBoxes = document.querySelectorAll(".news-box");
+    newsBoxes.forEach(box => {
+        box.addEventListener("mouseover", function() {
+            box.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+        });
+        box.addEventListener("mouseout", function() {
+            box.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
+        });
+    });
 });
