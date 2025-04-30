@@ -200,16 +200,11 @@ h1 {
 }
 
 .jaunumi-kaste {
-  width: 180px;
-  margin: 10px;
+  flex: 0 1 calc(33.33% - 20px);
 }
 
-.jaunumi-kaste:nth-child(-n+3) {
-  flex: 0 1 calc(30% - 20px);
-}
-
-.jaunumi-kaste:nth-child(n+4) {
-  flex: 0 1 calc(45% - 20px);
+.jaunumi-kaste:nth-last-child(-n+2) {
+  flex: 0 1 calc(50% - 20px);
 }
 
 .jaunumi-kaste {
