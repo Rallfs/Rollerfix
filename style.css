@@ -193,39 +193,17 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  max-width: 960px;
-  margin: 0 auto;
+  gap: 30px 100px;
+  max-width: 1000px;         /* Limit the total width to force wrapping */
+  margin: 0 auto;           /* Center the whole box group */
   padding: 20px 0;
 }
 
 .jaunumi-kaste {
-  flex: 0 1 calc(33.33% - 20px);
-}
-
-.jaunumi-kaste:nth-last-child(-n+2) {
-  flex: 0 1 calc(50% - 20px);
-}
-
-.jaunumi-kaste {
-  width: 180px;
+  width: 230px;
   height: 100px;
   background: transparent;
-  border: 2px solid black;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.jaunumi-kaste h3 {
-  margin: 0 0 5px 0;
-  font-size: 18px;
-}
-
-.jaunumi-kaste p {
-  margin: 0;
-  font-size: 14px;
+  border: 2px solid black; 
 }
 
 footer {
